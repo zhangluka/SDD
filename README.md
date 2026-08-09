@@ -1,3 +1,5 @@
+
+
 # SDD 落地实践指南
 
 > **Specification-Driven Development (SDD)** 规范驱动开发 · 面向 AI 辅助编程时代的软件工程实践 · 从需求到运维的全流程指南
@@ -182,7 +184,7 @@ SDD 不是传统 SDLC（Software Development Life Cycle ）里的某一个孤立
 3. **AI 使用方式**：将「当前任务的规格片段 + 验收条件」作为上下文给 AI，减少歧义；代码审查以「是否符合规格 + 是否覆盖所列验收条件」为检查要点。
 4. **轻量工具**：规范仓库 + 简单 CLI（如 `sdd validate specs/` 校验格式，`sdd trace SPEC-001` 列出关联 task/PR），不必先上重量级平台。
 
-**工具选型**：对 OpenSpec、Spec-Kit、Speck、SpecPulse 等工具的对比分析及各自**落地能力**陈述，见 **[工具选型建议](docs/工具选型建议.md)**。结论：以本指南为基准在实际项目中落地时，优先采用 **Spec-Kit**（主用 Claude Code 时可选 **Speck**）；需要强契约与可执行验收时可结合 **OpenSpec** 作为补充。
+**工具选型**：对 OpenSpec、Spec-Kit、Speck、SpecPulse 等工具的对比分析及各自**落地能力**陈述，见 **[工具选型建议](docs/工具选型建议.md)**。结论：以本指南为基准在实际项目中落地时，优先采用 **Spec-Kit**（主用 Claude Code 时可选 **Speck**；若使用 Cursor 等其他 AI 编程工具，推荐原版 **Spec-Kit**）；需要强契约与可执行验收时可结合 **OpenSpec** 作为补充。
 
 ---
 
